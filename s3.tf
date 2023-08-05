@@ -10,7 +10,7 @@ resource "aws_s3_bucket_policy" "daily-report-s3-bucket_bucket_policy" {
 data "aws_iam_policy_document" "daily-report-s3-bucket_bucket_policy_document" {
   statement {
     principals {
-      type        = "AWS"
+      type        = "Service"
       identifiers = ["timestream.amazonaws.com"]
     }
 
