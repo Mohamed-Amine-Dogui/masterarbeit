@@ -1,5 +1,5 @@
 terraform {
-  required_version = "= 0.14.8"
+  # required_version = "= 0.14.8"
   backend "s3" {
       bucket         = "backend-terraform-master"
       key            = "statefile.tfstate"
