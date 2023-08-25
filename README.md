@@ -1,6 +1,10 @@
 # Masterarbeit : IoT und AWS Cloud Infrastruktur
 
-Dieses GitHub-Repository enthält den Code und die Dokumentation im Rahmen meiner Masterarbeit zum Thema "IoT und AWS Cloud Infrastruktur". Ziel dieser Arbeit ist es, die Implementierung von Internet of Things (IoT) Technologien in Kombination mit AWS Cloud Services zu untersuchen und zu demonstrieren.
+Willkommen im GitHub-Repository meiner Masterarbeit zum Thema "IoT und AWS Cloud Infrastruktur". Hier finden Sie den Code und die begleitende Dokumentation zu meinem Projekt. Das Hauptziel dieser Arbeit besteht darin, die Umsetzung von Internet of Things (IoT) Technologien in Verbindung mit AWS Cloud Services eingehend zu untersuchen und durch ein Proof of Concept (PoC) zu demonstrieren.
+
+Das Projekt befasst sich mit der Erfassung von Sensordaten mittels IoT-Geräten, der Verarbeitung und Speicherung dieser Daten in der AWS Cloud sowie der Visualisierung der Ergebnisse. Dabei werden wichtige Konzepte wie "Infrastructure as Code" (IaaC) und Cloud Computing angewendet, um eine effiziente, skalierbare und automatisierte Lösung zu entwickeln. Die gesammelten Messwerte werden in Echtzeit visualisiert und in Grafana dargestellt, um eine umfassende Überwachung und Analyse zu ermöglichen.
+
+Dieses Projekt ist als Proof of Concept (PoC) konzipiert, um die Machbarkeit und Praktikabilität der Integration von IoT-Technologien in die AWS Cloud zu verdeutlichen. Die bereitgestellten Code-Beispiele, Konfigurationen und Dokumentationen dienen als Ressourcen, um den Prozess der Umsetzung zu verstehen und nachvollziehen zu können.
 
 ## Inhaltsverzeichnis
 
@@ -13,7 +17,9 @@ Dieses GitHub-Repository enthält den Code und die Dokumentation im Rahmen meine
 
 ## Hintergrund
 
-In dieser Masterarbeit wird die Integration von IoT-Sensoren in die AWS Cloud-Infrastruktur untersucht. Das Ziel ist es, Sensordaten mithilfe von IoT-Geräten zu erfassen, in der AWS Cloud zu verarbeiten und zu speichern. Hierbei kommen Konzepte wie "Infrastructure as Code" (IaaC) und Cloud Computing zum Einsatz, um eine effiziente, skalierbare und automatisierte Lösung zu entwickeln.
+In dieser Masterarbeit liegt der Fokus auf der umfassenden Integration von IoT-Sensoren in die AWS Cloud-Infrastruktur. Das Hauptziel besteht darin, Daten von Sensoren mithilfe von IoT-Geräten zu erfassen, diese Daten in der AWS Cloud zu verarbeiten, zu speichern und letztlich durch Visualisierung in Grafana anschaulich darzustellen. Dabei kommen essentielle Konzepte wie "Infrastructure as Code" (IaaC) und Cloud Computing zum Einsatz, um eine Lösung zu entwickeln, die höchste Effizienz, Skalierbarkeit und Automatisierung bietet.
+
+Die gesammelten Messwerte werden in Grafana in nahezu Echtzeit visualisiert, was eine aussagekräftige und intuitive Überwachung und Analyse der Sensorwerte ermöglicht. Dieser Ansatz trägt dazu bei, sowohl die technische Umsetzung als auch die praktische Anwendung der IoT-Integration in die Cloud-Infrastruktur zu erforschen und zu demonstrieren.
 
 ## Verwendung
 
@@ -85,7 +91,3 @@ Der Cron-Job führt das Skript `main.py` alle 5 Minuten aus und überträgt die 
 ## Workflow und CI/CD
 
 Die Implementierung der AWS Cloud-Infrastruktur und die Ausführung der Skripte werden mithilfe von GitHub Actions und Terraform automatisiert. Der Workflow in diesem Repository (siehe `.github/workflows/main.yaml`) führt Terraform-Schritte aus, um die Infrastruktur zu erstellen, und verwendet die bereitgestellten Skripte, um Temperaturdaten zu erfassen und in die Cloud zu übertragen.
-
----
-
-Fühlen Sie sich frei, den Inhalt weiter anzupassen und zu erweitern, um den Kontext Ihrer Masterarbeit, die Nutzung des Raspberry Pi 4B und die Einrichtung des Cron-Jobs angemessen zu erklären.
