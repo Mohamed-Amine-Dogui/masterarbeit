@@ -2,7 +2,7 @@
 
 Willkommen im GitHub-Repository meiner Masterarbeit zum Thema "IoT und AWS Cloud Infrastruktur". Hier finden Sie den Code und die begleitende Dokumentation zu meinem Projekt. Das Hauptziel dieser Arbeit besteht darin, die Umsetzung von Internet of Things (IoT) Technologien in Verbindung mit AWS Cloud Services eingehend zu untersuchen und durch ein Proof of Concept (PoC) zu demonstrieren.
 
-Das Projekt befasst sich mit der Erfassung von Sensordaten mittels IoT-Geräten, der Verarbeitung und Speicherung dieser Daten in der AWS Cloud sowie der Visualisierung der Ergebnisse. Dabei werden wichtige Konzepte wie "Infrastructure as Code" (IaaC) und Cloud Computing angewendet, um eine effiziente, skalierbare und automatisierte Lösung zu entwickeln. Die gesammelten Messwerte werden in Echtzeit visualisiert und in Grafana dargestellt, um eine umfassende Überwachung und Analyse zu ermöglichen.
+Das Projekt befasst sich mit der Erfassung von Sensordaten mittels IoT-Geräten, der Verarbeitung und Speicherung dieser Daten in der AWS Cloud sowie der Visualisierung der Ergebnisse. Dabei werden wichtige Konzepte wie "Infrastructure as Code" (IaaC) und Cloud Computing angewendet, um eine effiziente, skalierbare und automatisierte Lösung zu entwickeln. Die gesammelten Messwerte werden in nahezu Echtzeit visualisiert und in Grafana dargestellt, um eine umfassende Überwachung und Analyse zu ermöglichen.
 
 Dieses Projekt ist als Proof of Concept (PoC) konzipiert, um die Machbarkeit und Praktikabilität der Integration von IoT-Technologien in die AWS Cloud zu verdeutlichen. Die bereitgestellten Code-Beispiele, Konfigurationen und Dokumentationen dienen als Ressourcen, um den Prozess der Umsetzung zu verstehen und nachvollziehen zu können.
 
