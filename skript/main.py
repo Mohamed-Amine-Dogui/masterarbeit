@@ -52,7 +52,7 @@ def check_table_existence(timestream_client, database_name, table_name):
 def create_table(timestream_client, database_name, table_name):
     retention_properties = {
         'MemoryStoreRetentionPeriodInHours': 1,
-        'MagneticStoreRetentionPeriodInDays': 60
+        'MagneticStoreRetentionPeriodInDays': 1
     }
     try:
         timestream_client.create_table(DatabaseName=database_name, TableName=table_name,
