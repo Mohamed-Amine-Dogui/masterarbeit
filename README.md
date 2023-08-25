@@ -80,9 +80,11 @@ Um den Cron-Job einzurichten, folgen Sie bitte den nachstehenden Schritten:
 
 2. Ermitteln Sie das aktuelle Datum und setzen Sie die Systemzeitzone auf "Europe/Berlin".
 
-3. Verwenden Sie den Befehl "crontab -e", um den Cron-Job zu bearbeiten.
+```shell
+sudo timedatectl set-timezone Europe/Berlin
+```
 
-4. Fügen Sie die folgende Zeile hinzu, um den Cron-Job einzurichten, der das Skript täglich um 08:00 Uhr ausführt und das Protokoll in "cron_log.txt" speichert:
+3. Verwenden Sie den Befehl "crontab -e", um den Cron-Job zu bearbeiten. Und fügen Sie die folgende Zeile hinzu, um den Cron-Job einzurichten, der das Skript täglich um 08:00 Uhr ausführt und das Protokoll in "cron_log.txt" speichert:
 
 ```shell
 00 08 * * * /usr/bin/python3 /home/app/code/unload_csv.py >> /home/app/code/cron_log.txt 2>&1 
