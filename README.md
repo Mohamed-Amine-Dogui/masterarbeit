@@ -70,23 +70,25 @@ Die Implementierung nutzt einen Raspberry Pi 4B als IoT-Gerät. Hier ist eine ku
 
 Mit diesen Schritten wird der Raspberry Pi 4B für die Verwendung des DS18B20-Temperatursensors konfiguriert, und Sie können die Temperaturdaten effektiv auslesen und übertragen.
 
-## Ausführen des Cron-Jobs
+## Ausführen des Cron-Jobs: Erstellung eines täglichen CSV-Berichts
 
-Der Cron-Job wird verwendet, um das Skript `main.py` automatisch zu bestimmten Zeiten auszuführen. Hierbei werden Temperaturdaten erfasst und in die AWS Timestream-Datenbank übertragen. Um den Cron-Job einzurichten:
+In diesem Abschnitt wird erläutert, wie der Cron-Job eingerichtet wird, um das Python-Skript "unload_csv.py" auf dem Raspberry Pi auszuführen. Dieses Skript ermöglicht die Erstellung eines täglichen CSV-Berichts, der sämtliche Daten vom vorherigen Tag bis zur aktuellen Zeit aus der Timestream-Datenbank enthält.
 
-1. Öffnen Sie das Terminal auf dem Raspberry Pi.
-2. Geben Sie `crontab -e` ein, um den Cron-Editor zu öffnen.
-3. Fügen Sie die Zeile hinzu, um den Job alle 5 Minuten auszuführen:
+Um den Cron-Job einzurichten, folgen Sie bitte den nachstehenden Schritten:
 
-   ```
-   */5 * * * * /usr/bin/python3 /pfad/zum/skript/main.py
-   ```
+1. Fügen Sie am Anfang des Skripts "#!/usr/bin/env python3" ein, um den Python-Interpreter festzulegen.
 
-   Ersetzen Sie `/pfad/zum/skript` durch den tatsächlichen Pfad zum Hauptskript.
+2. Ermitteln Sie das aktuelle Datum und setzen Sie die Systemzeitzone auf "Europe/Berlin".
 
-4. Speichern Sie die Änderungen und schließen Sie den Editor.
+3. Verwenden Sie den Befehl "crontab -e", um den Cron-Job zu bearbeiten.
 
-Der Cron-Job führt das Skript `main.py` alle 5 Minuten aus und überträgt die Temperaturdaten in die AWS Cloud.
+4. Fügen Sie die folgende Zeile hinzu, um den Cron-Job einzurichten, der das Skript täglich um 08:00 Uhr ausführt und das Protokoll in "cron_log.txt" speichert:
+
+```shell
+00 08 * * * /usr/bin/python3 /home/app/code/unload_csv.py >> /home/app/code/cron_log.txt 2>&1 
+```
+
+Durch das Ausführen dieses Skripts wird ein täglicher CSV-Bericht generiert, der sämtliche Daten vom vorherigen Tag bis zur aktuellen Zeit aus der Timestream-Datenbank abruft und in eine CSV-Datei speichert. Dieser Bericht dient zur weiteren Analyse und Auswertung der gesammelten Messdaten.
 
 ## Workflow und CI/CD
 
