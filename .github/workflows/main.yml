@@ -9,7 +9,6 @@ jobs:
   terraform:
     name: Terraform Github Actions
     runs-on: ubuntu-latest
- #   environment: development
 
     steps:
       - name: Checkout
