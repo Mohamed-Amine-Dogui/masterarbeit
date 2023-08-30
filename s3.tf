@@ -6,10 +6,12 @@ resource "aws_s3_bucket" "daily-report-s3-bucket" {
   }
 }
 
+
 resource "aws_s3_bucket_policy" "daily-report-s3-bucket_bucket_policy" {
   bucket = aws_s3_bucket.daily-report-s3-bucket.id
   policy = data.aws_iam_policy_document.daily-report-s3-bucket_bucket_policy_document.json
 }
+
 
 data "aws_iam_policy_document" "daily-report-s3-bucket_bucket_policy_document" {
   statement {

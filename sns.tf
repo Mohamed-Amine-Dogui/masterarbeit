@@ -26,6 +26,7 @@ resource "aws_sns_topic" "sns_topic" {
 EOF
 }
 
+
 resource "aws_sns_topic_subscription" "sns_sub" {
   topic_arn = aws_sns_topic.sns_topic.arn
   protocol  = "email"

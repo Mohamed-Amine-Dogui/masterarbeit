@@ -6,6 +6,7 @@ resource "aws_timestreamwrite_database" "db_sensor_database" {
   }
 }
 
+
 resource "aws_timestreamwrite_table" "temp_evolution_table" {
   database_name = aws_timestreamwrite_database.db_sensor_database.database_name
   table_name    = "temp_evolution"
