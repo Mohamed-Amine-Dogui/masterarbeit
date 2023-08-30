@@ -96,7 +96,7 @@ Durch das Ausführen dieses Skripts wird ein täglicher CSV-Bericht generiert, d
 
 Die Implementierung der AWS Cloud-Infrastruktur und die Ausführung der Skripte werden mithilfe von GitHub Actions und Terraform automatisiert. Der Workflow in diesem Repository (siehe `.github/workflows/main.yaml`) führt Terraform-Schritte aus, um die Infrastruktur zu erstellen, und verwendet die bereitgestellten Skripte, um Temperaturdaten zu erfassen und in die Cloud zu übertragen.
 
-### Architekturdiagramm
+## Architekturdiagramm
 
 Das Diagramm verdeutlicht die nahtlose Integration und Interaktion von AWS Dienste, die in Kombination eine IoT-basierte Temperaturüberwachungslösung bilden.
 
