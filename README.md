@@ -100,4 +100,4 @@ Die Implementierung der AWS Cloud-Infrastruktur und die Ausführung der Skripte 
 
 Das Diagramm verdeutlicht die nahtlose Integration und Interaktion von AWS Dienste, die in Kombination eine IoT-basierte Temperaturüberwachungslösung bilden.
 
-![Architekturdiagramm](masterarbeit/pics/Architektur.png)
+![Architekturdiagramm](pics/Architektur.png)
