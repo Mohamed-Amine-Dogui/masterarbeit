@@ -30,7 +30,7 @@ def main():
 
     setup_logging()
 
-    target_s3_bucket = "daily-report-s3-bucket"
+    target_s3_bucket = "sensor-daily-report-bucket"
     s3_prefix = datetime.now().strftime("%Y-%m-%d")
 
     timestream_client = boto3.client("timestream-query", region_name="eu-west-1")

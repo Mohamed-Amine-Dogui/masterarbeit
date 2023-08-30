@@ -135,7 +135,7 @@ def create_table(timestream_client, database_name, table_name):
 
 
 def send_sns_alert(sns_client, message):
-    sns_topic_arn = "arn:aws:sns:eu-west-1:683603511960:SensorTopic"
+    sns_topic_arn = "arn:aws:sns:eu-west-1:683603511960:Sensor-Topic"
     try:
         # Publish the message to the SNS topic
         response = sns_client.publish(TopicArn=sns_topic_arn, Message=message)
