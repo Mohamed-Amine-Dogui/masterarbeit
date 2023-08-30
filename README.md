@@ -37,10 +37,10 @@ Selbstverständlich! Hier ist die aktualisierte Anleitung zur Konfiguration des 
 
 Die Implementierung nutzt einen Raspberry Pi 4B als IoT-Gerät. Hier ist eine kurze Anleitung zur Konfiguration des Raspberry Pi für die Nutzung des DS18B20-Temperatursensors:
 
-### Verkablung des Raspberry Pi 4B mit DS18B20-Temperatursensors
+### Verkabelung des Raspberry Pi 4B mit DS18B20-Temperatursensors
 Zwischen Vdd und DQ wird ein Pull-up-Widerstand von 4,7 Kilo-Ohm eingefügt.
 
-![Verkablung](pics/Verkabelung.png)
+![Verkabelung](pics/Verkabelung.png)
 
 1. **Konfigurationsdatei bearbeiten:** Die Konfigurationsdatei "config.txt" im Verzeichnis "/boot" wird geöffnet, um GPIO-Einstellungen des Raspberry Pi anzupassen. Verwenden Sie den Texteditor "nano":
    
