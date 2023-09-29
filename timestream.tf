@@ -1,3 +1,4 @@
+/*
 resource "aws_timestreamwrite_database" "db_sensor_database" {
   database_name = "db_sensor"
 

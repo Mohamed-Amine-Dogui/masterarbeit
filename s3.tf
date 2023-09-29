@@ -1,3 +1,4 @@
+/*
 resource "aws_s3_bucket" "daily-report-s3-bucket" {
   bucket = "sensor-daily-report-bucket"
 

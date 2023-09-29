@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import boto3
 from datetime import datetime
 import logging
