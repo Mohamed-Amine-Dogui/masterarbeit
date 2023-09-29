@@ -33,3 +33,4 @@ resource "aws_sns_topic_subscription" "sns_sub" {
   protocol  = "email"
   endpoint  = "douggui.med.amine@gmail.com"
 }
+*/

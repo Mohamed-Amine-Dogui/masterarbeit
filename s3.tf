@@ -32,3 +32,4 @@ data "aws_iam_policy_document" "daily-report-s3-bucket_bucket_policy_document" {
     ]
   }
 }
+*/

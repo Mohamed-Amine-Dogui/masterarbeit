@@ -21,3 +21,4 @@ resource "aws_timestreamwrite_table" "temp_evolution_table" {
     project = "master"
   }
 }
+*/
